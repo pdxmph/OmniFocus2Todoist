@@ -47,9 +47,9 @@ for label in labels:
 # label_id from the dicts created above.
 
 api = TodoistAPI()
-response = api.login('craig.martell@gmail.com', 'j84#EYz76IJA')
+response = api.login(username,password)
 user_info = response.json()
-user_api_token = user_info['token']
+user_api_token = user_info['api_token']
 
 file="./OmniFocus.csv"
 
